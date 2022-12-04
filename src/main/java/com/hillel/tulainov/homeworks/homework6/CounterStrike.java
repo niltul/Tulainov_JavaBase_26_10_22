@@ -25,7 +25,7 @@ public class CounterStrike {
         System.out.println("Enter the count of frags of fifth player:");
         int fifthFirst = scanner.nextInt();
 
-        int averageFirstTeam = (firstFirst + secondFirst +
+        double averageFirstTeam = (double) (firstFirst + secondFirst +
                 thirdFirst + fourthFirst + fifthFirst) / 5;
 
 
@@ -49,7 +49,7 @@ public class CounterStrike {
         System.out.println("Enter the count of frags of fifth player:");
         int fifthSecond = scanner.nextInt();
 
-        int averageSecondTeam = (firstSecond + secondSecond +
+        double averageSecondTeam = (double) (firstSecond + secondSecond +
                 thirdSecond + fourthSecond + fifthSecond) / 5;
 
         if (averageFirstTeam > averageSecondTeam) {

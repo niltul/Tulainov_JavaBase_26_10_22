@@ -1,6 +1,6 @@
 package com.hillel.tulainov.homeworks.homework2;
 
-public class MyApp {
+public class Homework2 {
     public static void main(String[] args) {
 
         String width = "51\u00b010\u203244\u2033";
