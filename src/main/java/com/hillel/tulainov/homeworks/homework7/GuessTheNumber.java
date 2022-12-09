@@ -7,16 +7,23 @@ public class GuessTheNumber {
 
         Scanner scanner = new Scanner(System.in);
 
-        int guessNumber = 0;
-        for (int i = 0; i <= 10; i++) {
-            guessNumber = (int) (Math.random() * 10);
-        }
+        int guessNumber = (int) (Math.random() * 11);
+        int inputNumber;
 
-        System.out.println("Guess the number from 1 to 10 (you have 3 attempts) :");
+        System.out.println("Guess the number from 0 to 10 (you have 3 attempts) :");
+
 
         for (int i = 0;; i++) {
 
-            int inputNumber = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                if (scanner.hasNextInt()) {
+                    inputNumber = Integer.parseInt(scanner.nextLine());
+                    break;
+                } else {
+                    System.out.println("Wrong input. Please enter the number.");
+                }
+                scanner.nextLine();
+            }
 
             if (inputNumber == guessNumber) {
                 System.out.println("Correct! Congratulations!");
