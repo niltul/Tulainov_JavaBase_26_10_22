@@ -8,14 +8,25 @@ public class SpaceShuttles {
         System.out.println("- But we need space shuttles.");
         System.out.println("- Let's build them and give them number! and then fly!");
 
-        for (int i = 1; i <= 155; i++) {
+        int count = 0;
+
+        for (int i = 1;; i++) {
             String number = Integer.toString(i);
             if (number.contains("4") || number.contains("9")) {
                 continue;
             }
+
+            count++;
+
             System.out.println(number);
+
+            if (count == 100) {
+                break;
+            }
+
         }
 
+        System.out.println("Count of ships: " + count);
         System.out.println("Time to go!");
     }
 }
