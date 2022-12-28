@@ -1,4 +1,4 @@
-package com.hillel.tulainov.homeworks.homework12;
+package com.hillel.tulainov.homeworks.homework13;
 
 public class Burger {
 
