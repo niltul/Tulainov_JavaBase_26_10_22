@@ -27,7 +27,7 @@ public class Main {
 
         jon.printAccountInfo();
         System.out.println();
-        jon.setSurname("Targarien");
+        jon.setSurname("Targaryen");
         jon.printAccountInfo();
         System.out.println();
 
