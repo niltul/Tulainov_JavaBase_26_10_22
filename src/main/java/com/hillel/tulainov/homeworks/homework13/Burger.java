@@ -45,7 +45,7 @@ public class Burger {
             System.out.println("Composition of double burger: " + bun + " " +
                     meat + " " + mayo + " " + greens + " " + secondMeat);
         } else if (isDiet) {
-            System.out.println("Composition of burger: " + bun + " " +
+            System.out.println("Composition of diet burger: " + bun + " " +
                     meat + " " + greens);
         } else {
             System.out.println("Composition of burger: " + bun + " " +
